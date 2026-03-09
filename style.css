@@ -10,56 +10,106 @@ html {
 
 body {
   font-family: "Inter", Arial, sans-serif;
-  background: #000000;
+  background: #050505;
   color: #ffffff;
   line-height: 1.6;
   overflow-x: hidden;
+  position: relative;
 }
 
-a {
+a,
+button {
   text-decoration: none;
   color: inherit;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.bg-base {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.08), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.06), transparent 25%),
+    linear-gradient(180deg, #0a0a0a 0%, #030303 50%, #080808 100%);
+  z-index: 0;
+}
+
+.bg-orb {
+  position: fixed;
+  border-radius: 999px;
+  filter: blur(90px);
+  opacity: 0.16;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orb-1 {
+  width: 320px;
+  height: 320px;
+  background: #ffffff;
+  top: 80px;
+  left: -80px;
+}
+
+.orb-2 {
+  width: 260px;
+  height: 260px;
+  background: #8d8d8d;
+  top: 420px;
+  right: 60px;
+}
+
+.orb-3 {
+  width: 260px;
+  height: 260px;
+  background: #5c5c5c;
+  bottom: 60px;
+  left: 40%;
 }
 
 .bg-grid {
   position: fixed;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 38px 38px;
-  mask-image: radial-gradient(circle at center, black 45%, transparent 95%);
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(circle at center, black 40%, transparent 95%);
   pointer-events: none;
   z-index: 0;
 }
 
 .container {
-  width: min(1120px, calc(100% - 40px));
+  width: min(1140px, calc(100% - 40px));
   margin: 0 auto;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header {
   position: sticky;
   top: 0;
   z-index: 50;
-  backdrop-filter: blur(12px);
-  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(16px);
+  background: rgba(5, 5, 5, 0.72);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .nav {
-  min-height: 78px;
+  min-height: 82px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 18px;
 }
 
 .logo {
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 0.02em;
 }
 
@@ -68,7 +118,7 @@ a {
   align-items: center;
   gap: 28px;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 0.95rem;
+  font-size: 0.96rem;
 }
 
 .nav-links a:hover {
@@ -76,11 +126,11 @@ a {
 }
 
 .nav-button {
-  border: 1px solid rgba(255, 255, 255, 0.16);
   padding: 12px 18px;
   border-radius: 999px;
-  font-weight: 600;
-  transition: 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  font-weight: 700;
+  transition: 0.25s ease;
 }
 
 .nav-button:hover {
@@ -89,13 +139,13 @@ a {
 }
 
 .hero {
-  padding: 90px 0 70px;
+  padding: 100px 0 70px;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 34px;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 30px;
   align-items: center;
 }
 
@@ -104,22 +154,22 @@ a {
   font-size: 0.75rem;
   letter-spacing: 0.26em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.56);
+  color: rgba(255, 255, 255, 0.55);
   margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-size: clamp(2.8rem, 6vw, 5.2rem);
+  font-size: clamp(3rem, 6vw, 5.4rem);
   line-height: 0.96;
   font-weight: 900;
-  max-width: 820px;
+  max-width: 850px;
 }
 
 .hero-text {
   margin-top: 24px;
   color: rgba(255, 255, 255, 0.72);
   max-width: 720px;
-  font-size: 1.05rem;
+  font-size: 1.06rem;
   line-height: 1.9;
 }
 
@@ -129,35 +179,35 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 34px;
+  margin-top: 32px;
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 50px;
+  min-height: 52px;
   padding: 0 22px;
   border-radius: 16px;
-  font-weight: 700;
-  transition: 0.2s ease;
+  font-weight: 800;
+  transition: 0.25s ease;
+  border: none;
 }
 
 .btn-white {
-  background: #ffffff;
+  background: linear-gradient(180deg, #ffffff 0%, #dddddd 100%);
   color: #000000;
-  border: 1px solid #ffffff;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
 }
 
 .btn-white:hover {
-  transform: translateY(-1px);
-  opacity: 0.92;
+  transform: translateY(-2px);
 }
 
 .btn-outline {
   border: 1px solid rgba(255, 255, 255, 0.14);
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .btn-outline:hover {
@@ -171,11 +221,27 @@ a {
   gap: 14px;
 }
 
+.stat-card,
+.about-card,
+.side-box,
+.bot-card,
+.commands-panel,
+.info-card,
+.support-box,
+.hero-panel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.03)
+  );
+  box-shadow: 0 18px 80px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+}
+
 .stat-card {
   padding: 20px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .stat-card span {
@@ -191,23 +257,9 @@ a {
   font-size: 0.92rem;
 }
 
-.hero-panel,
-.about-card,
-.bot-card,
-.info-card,
-.support-box {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.06),
-    rgba(255, 255, 255, 0.025)
-  );
-  border-radius: 30px;
-  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
-}
-
 .hero-panel {
   padding: 24px;
+  border-radius: 30px;
 }
 
 .panel-top {
@@ -239,7 +291,7 @@ a {
 .panel-block {
   padding: 18px;
   border-radius: 22px;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.45);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -256,13 +308,14 @@ a {
   font-size: 0.76rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.74);
   background: rgba(255, 255, 255, 0.08);
 }
 
 .panel-block h3,
 .bot-card h3,
-.info-card h3 {
+.info-card h3,
+.commands-panel h3 {
   font-size: 1.5rem;
   font-weight: 800;
 }
@@ -271,13 +324,39 @@ a {
 .bot-desc,
 .info-card p,
 .about-card p,
-.support-text {
-  color: rgba(255, 255, 255, 0.7);
+.support-text,
+.commands-description {
+  color: rgba(255, 255, 255, 0.72);
   line-height: 1.85;
 }
 
+.mini-console {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.console-line {
+  display: flex;
+  gap: 12px;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.console-line + .console-line {
+  margin-top: 10px;
+}
+
+.console-tag {
+  min-width: 62px;
+  color: #ffffff;
+  font-weight: 800;
+}
+
 .section {
-  padding: 42px 0 90px;
+  padding: 40px 0 90px;
 }
 
 .section-title {
@@ -289,13 +368,42 @@ a {
   font-size: clamp(2rem, 4vw, 3.4rem);
   line-height: 1.05;
   font-weight: 900;
-  max-width: 850px;
+  max-width: 860px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  gap: 22px;
 }
 
 .about-card {
   padding: 34px;
+  border-radius: 30px;
   display: grid;
-  gap: 20px;
+  gap: 18px;
+}
+
+.about-side {
+  display: grid;
+  gap: 16px;
+}
+
+.side-box {
+  padding: 22px;
+  border-radius: 24px;
+}
+
+.side-box span {
+  display: block;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.side-box strong {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .bots-grid {
@@ -306,6 +414,14 @@ a {
 
 .bot-card {
   padding: 30px;
+  border-radius: 30px;
+  transition: 0.25s ease;
+}
+
+.active-bot-card,
+.bot-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
 .bot-head {
@@ -323,9 +439,83 @@ a {
   padding: 10px 14px;
   border-radius: 14px;
   font-size: 0.9rem;
-  background: #000000;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.commands-panel {
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.commands-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.commands-label {
+  color: rgba(255, 255, 255, 0.52);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+}
+
+.commands-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.commands-description {
+  margin-top: 18px;
+}
+
+.command-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.command-item {
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.command-name {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.command-item p {
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.7;
 }
 
 .features-grid {
@@ -336,10 +526,12 @@ a {
 
 .info-card {
   padding: 26px;
+  border-radius: 28px;
 }
 
 .support-box {
   padding: 42px;
+  border-radius: 32px;
   text-align: center;
 }
 
@@ -358,19 +550,44 @@ a {
   justify-content: space-between;
   gap: 18px;
   flex-wrap: wrap;
-  color: rgba(255, 255, 255, 0.42);
+  color: rgba(255, 255, 255, 0.44);
   font-size: 0.92rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 {
+  transition-delay: 0.12s;
+}
+
+.delay-2 {
+  transition-delay: 0.24s;
+}
+
+.delay-3 {
+  transition-delay: 0.36s;
 }
 
 @media (max-width: 1024px) {
   .hero-grid,
+  .about-grid,
   .bots-grid,
-  .features-grid {
+  .features-grid,
+  .command-grid {
     grid-template-columns: 1fr;
   }
 
   .hero {
-    padding-top: 70px;
+    padding-top: 74px;
   }
 }
 
@@ -392,10 +609,13 @@ a {
   }
 
   .about-card,
+  .side-box,
   .bot-card,
+  .commands-panel,
   .info-card,
   .support-box,
-  .hero-panel {
+  .hero-panel,
+  .stat-card {
     padding: 22px;
     border-radius: 24px;
   }
