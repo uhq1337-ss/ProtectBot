@@ -17,6 +17,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg-base"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
   <div class="bg-grid"></div>
 
   <header class="header">
@@ -27,6 +31,7 @@
         <a href="#about">À propos</a>
         <a href="#bots">Bots</a>
         <a href="#features">Fonctionnalités</a>
+        <a href="#commands">Commandes</a>
         <a href="#support">Support</a>
       </nav>
 
@@ -37,20 +42,21 @@
   <main>
     <section class="hero" id="home">
       <div class="container hero-grid">
-        <div class="hero-left">
-          <p class="eyebrow">Bots Discord • Sécurité • IA</p>
+        <div class="hero-left reveal">
+          <p class="eyebrow">Discord Bots • Security • AI</p>
           <h1>
-            Protégez, automatisez et améliorez votre serveur Discord.
+            Une protection sérieuse pour les serveurs Discord modernes.
           </h1>
           <p class="hero-text">
-            Protect Bot réunit des bots Discord conçus pour offrir une sécurité
-            avancée, une modération efficace et une assistance intelligente.
-            Une image sobre, noire et blanche, avec un rendu propre et moderne.
+            Protect Bot regroupe des bots Discord conçus pour la sécurité, la
+            modération et l’intelligence artificielle. Un style premium,
+            une expérience plus moderne, et des outils pensés pour garder le
+            contrôle de votre communauté.
           </p>
 
           <div class="hero-actions">
             <a href="#bots" class="btn btn-white">Voir les bots</a>
-            <a href="#support" class="btn btn-outline">Support</a>
+            <a href="#commands" class="btn btn-outline">Voir les commandes</a>
           </div>
 
           <div class="hero-stats">
@@ -60,16 +66,16 @@
             </div>
             <div class="stat-card">
               <span>24/7</span>
-              <p>Protection continue</p>
+              <p>Protection active</p>
             </div>
             <div class="stat-card">
-              <span>B/W</span>
-              <p>Style noir et blanc</p>
+              <span>Pro</span>
+              <p>Design premium</p>
             </div>
           </div>
         </div>
 
-        <div class="hero-right">
+        <div class="hero-right reveal delay-1">
           <div class="hero-panel">
             <div class="panel-top">
               <div class="panel-dots">
@@ -77,25 +83,40 @@
                 <span></span>
                 <span></span>
               </div>
-              <p>Protect Bot System</p>
+              <p>Protect Bot Panel</p>
             </div>
 
             <div class="panel-block">
-              <span class="panel-label">Sécurité</span>
-              <h3>Protect Guard</h3>
+              <span class="panel-label">Protect Guard</span>
+              <h3>Sécurité & modération</h3>
               <p>
-                Anti-raid, anti-spam, anti-link, logs complets, lockdown et
-                outils de protection avancés.
+                Protection contre les raids, spam, liens, abus et actions
+                malveillantes avec des systèmes rapides et efficaces.
               </p>
             </div>
 
             <div class="panel-block">
-              <span class="panel-label">Intelligence artificielle</span>
-              <h3>Protect AI</h3>
+              <span class="panel-label">Protect AI</span>
+              <h3>Intelligence artificielle</h3>
               <p>
-                Assistance intelligente, réponses naturelles, aide serveur,
-                optimisation et interaction avancée.
+                Réponses intelligentes, assistance serveur, aide gaming et
+                interaction plus naturelle pour votre communauté.
               </p>
+            </div>
+
+            <div class="mini-console">
+              <div class="console-line">
+                <span class="console-tag">STATUS</span>
+                <span>All systems operational</span>
+              </div>
+              <div class="console-line">
+                <span class="console-tag">BOT</span>
+                <span>Protect Guard ready</span>
+              </div>
+              <div class="console-line">
+                <span class="console-tag">AI</span>
+                <span>Protect AI listening</span>
+              </div>
             </div>
           </div>
         </div>
@@ -104,46 +125,60 @@
 
     <section class="section" id="about">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title reveal">
           <p class="eyebrow">À propos</p>
-          <h2>Une nouvelle génération de bots Discord</h2>
+          <h2>Une base solide pour protéger et améliorer votre serveur</h2>
         </div>
 
-        <div class="about-card">
-          <p>
-            Protect Bot développe des bots Discord pensés pour les communautés
-            qui veulent un serveur plus sûr, plus propre et plus simple à gérer.
-            Nos outils permettent de renforcer la sécurité, d'automatiser la
-            modération et d'apporter une aide intelligente aux membres.
-          </p>
-          <p>
-            Chaque bot est conçu pour offrir une expérience fluide, rapide et
-            fiable. L'objectif est simple : proposer des solutions sérieuses et
-            efficaces aux administrateurs qui veulent garder le contrôle de leur
-            serveur tout en améliorant l'expérience de leur communauté.
-          </p>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <p>
+              Protect Bot développe des bots Discord pensés pour les serveurs
+              qui veulent une vraie sécurité, une modération plus simple et des
+              outils modernes pour leur communauté.
+            </p>
+            <p>
+              Chaque système est conçu pour être rapide, stable, propre et
+              efficace, avec un objectif clair : donner aux administrateurs des
+              outils sérieux pour gérer leur serveur sans perdre de temps.
+            </p>
+          </div>
+
+          <div class="about-side reveal delay-1">
+            <div class="side-box">
+              <span>Protection</span>
+              <strong>Anti-raid, anti-spam, anti-link</strong>
+            </div>
+            <div class="side-box">
+              <span>Gestion</span>
+              <strong>Logs, lockdown, whitelist, contrôle rapide</strong>
+            </div>
+            <div class="side-box">
+              <span>Assistance</span>
+              <strong>IA, support, réponses intelligentes</strong>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="bots">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title reveal">
           <p class="eyebrow">Nos bots</p>
-          <h2>Deux solutions essentielles pour votre serveur</h2>
+          <h2>Choisissez un bot pour voir sa description et ses commandes</h2>
         </div>
 
         <div class="bots-grid">
-          <article class="bot-card">
+          <article class="bot-card reveal active-bot-card" data-bot="guard">
             <div class="bot-head">
               <span class="bot-tag">Sécurité & modération</span>
               <h3>Protect Guard</h3>
             </div>
 
             <p class="bot-desc">
-              Protect Guard protège les serveurs Discord contre les raids, le
-              spam, les liens malveillants et les abus grâce à des systèmes de
-              sécurité complets.
+              Un bot pensé pour protéger votre serveur Discord contre les
+              attaques, le spam et les comportements abusifs.
             </p>
 
             <div class="feature-list">
@@ -151,83 +186,140 @@
               <span>Anti-spam</span>
               <span>Anti-link</span>
               <span>Lockdown</span>
-              <span>Logs complets</span>
+              <span>Logs</span>
               <span>Whitelist</span>
             </div>
 
             <div class="card-actions">
-              <a href="#" class="btn btn-white">Ajouter le bot</a>
-              <a href="#features" class="btn btn-outline">Fonctions</a>
+              <button class="btn btn-white bot-switch" data-bot="guard" type="button">
+                Voir les commandes
+              </button>
             </div>
           </article>
 
-          <article class="bot-card">
+          <article class="bot-card reveal delay-1" data-bot="ai">
             <div class="bot-head">
               <span class="bot-tag">Intelligence artificielle</span>
               <h3>Protect AI</h3>
             </div>
 
             <p class="bot-desc">
-              Protect AI aide les membres avec des réponses intelligentes, une
-              assistance serveur, des conseils utiles et une interaction plus
-              naturelle sur Discord.
+              Un bot intelligent pour aider les membres, répondre aux questions
+              et offrir une assistance plus naturelle sur Discord.
             </p>
 
             <div class="feature-list">
-              <span>Réponses intelligentes</span>
+              <span>IA</span>
               <span>Aide serveur</span>
-              <span>Optimisation gaming</span>
-              <span>Assistance auto</span>
-              <span>Support communauté</span>
-              <span>Interaction naturelle</span>
+              <span>Optimisation</span>
+              <span>Gaming</span>
+              <span>Réponses rapides</span>
+              <span>Assistance</span>
             </div>
 
             <div class="card-actions">
-              <a href="#" class="btn btn-white">Ajouter le bot</a>
-              <a href="#features" class="btn btn-outline">Fonctions</a>
+              <button class="btn btn-white bot-switch" data-bot="ai" type="button">
+                Voir les commandes
+              </button>
             </div>
           </article>
         </div>
       </div>
     </section>
 
+    <section class="section" id="commands">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">Commandes</p>
+          <h2>Détails du bot sélectionné</h2>
+        </div>
+
+        <div class="commands-panel reveal">
+          <div class="commands-top">
+            <div>
+              <p class="commands-label">Bot actif</p>
+              <h3 id="botTitle">Protect Guard</h3>
+            </div>
+
+            <div class="commands-tabs">
+              <button class="tab-btn active" data-bot="guard" type="button">Protect Guard</button>
+              <button class="tab-btn" data-bot="ai" type="button">Protect AI</button>
+            </div>
+          </div>
+
+          <p class="commands-description" id="botDescription">
+            Protect Guard est un bot de sécurité avancé qui protège les serveurs Discord
+            contre les raids, le spam, les liens malveillants et les comportements abusifs.
+            Il permet aussi aux administrateurs de gérer rapidement la sécurité du serveur.
+          </p>
+
+          <div class="command-grid" id="commandGrid">
+            <div class="command-item">
+              <span class="command-name">+antiraid on</span>
+              <p>Active la protection anti-raid du serveur.</p>
+            </div>
+            <div class="command-item">
+              <span class="command-name">+antispam on</span>
+              <p>Active la protection contre le spam.</p>
+            </div>
+            <div class="command-item">
+              <span class="command-name">+antilink on</span>
+              <p>Bloque automatiquement les liens interdits.</p>
+            </div>
+            <div class="command-item">
+              <span class="command-name">+lock</span>
+              <p>Verrouille rapidement un salon.</p>
+            </div>
+            <div class="command-item">
+              <span class="command-name">+unlock</span>
+              <p>Rouvre un salon verrouillé.</p>
+            </div>
+            <div class="command-item">
+              <span class="command-name">+wl add @user</span>
+              <p>Ajoute un utilisateur à la whitelist.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="features">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title reveal">
           <p class="eyebrow">Fonctionnalités</p>
-          <h2>Tout ce qu'il faut pour un serveur propre et performant</h2>
+          <h2>Un écosystème pensé pour la sécurité et la performance</h2>
         </div>
 
         <div class="features-grid">
-          <div class="info-card">
+          <div class="info-card reveal">
             <h3>Sécurité avancée</h3>
             <p>
-              Protection contre les raids, le spam, les liens dangereux et les
-              comportements abusifs.
+              Protection active contre les raids, les abus, le spam et les
+              actions malveillantes.
             </p>
           </div>
 
-          <div class="info-card">
-            <h3>Modération simplifiée</h3>
+          <div class="info-card reveal delay-1">
+            <h3>Modération rapide</h3>
             <p>
-              Des outils rapides et efficaces pour aider les administrateurs à
-              gérer leur communauté.
+              Outils efficaces pour verrouiller, surveiller et gérer le serveur
+              sans perdre de temps.
             </p>
           </div>
 
-          <div class="info-card">
-            <h3>Logs détaillés</h3>
+          <div class="info-card reveal delay-2">
+            <h3>Suivi complet</h3>
             <p>
-              Suivi des actions importantes du serveur pour garder une vue
-              claire sur l'activité.
+              Logs et contrôle des événements importants pour garder une vraie
+              visibilité sur le serveur.
             </p>
           </div>
 
-          <div class="info-card">
+          <div class="info-card reveal delay-3">
             <h3>IA intégrée</h3>
             <p>
-              Une assistance intelligente pour répondre, aider et améliorer
-              l'expérience des membres.
+              Une expérience plus intelligente pour aider les membres et rendre
+              le serveur plus interactif.
             </p>
           </div>
         </div>
@@ -236,16 +328,16 @@
 
     <section class="section" id="support">
       <div class="container">
-        <div class="support-box">
+        <div class="support-box reveal">
           <p class="eyebrow">Support</p>
-          <h2>Besoin d'aide ou d'informations ?</h2>
+          <h2>Besoin d’aide ou envie d’en savoir plus ?</h2>
           <p class="support-text">
-            Rejoignez le support Protect Bot pour obtenir de l'aide, signaler un
-            problème, proposer une amélioration ou suivre l'évolution des bots.
+            Rejoignez le support Protect Bot pour poser vos questions, signaler
+            un problème, proposer une amélioration ou suivre les nouveautés.
           </p>
           <div class="support-actions">
             <a href="#" class="btn btn-white">Rejoindre le support</a>
-            <a href="#" class="btn btn-outline">Contacter Protect Bot</a>
+            <a href="#" class="btn btn-outline">Ajouter un bot</a>
           </div>
         </div>
       </div>
