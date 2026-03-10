@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     title.textContent = bot.title;
     description.textContent = bot.description;
-
     grid.innerHTML = "";
+
     bot.commands.forEach((cmd) => {
       const item = document.createElement("div");
       item.className = "command-item";
@@ -108,5 +108,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   renderBot("guard");
-  console.log("Protect Bot V3 loaded");
 });
