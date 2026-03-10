@@ -3,320 +3,217 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Protect Bot</title>
-  <meta
-    name="description"
-    content="Protect Bot - Bots Discord premium de sécurité, modération et intelligence artificielle."
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  />
+  <title>Protect Bot — Sécurité Discord Premium</title>
+  <meta name="description" content="Protect Bot, solution premium de protection Discord avec anti-raid, anti-nuke, logs, backup et commandes avancées." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-base"></div>
   <div class="bg-orb orb-1"></div>
   <div class="bg-orb orb-2"></div>
-  <div class="bg-grid"></div>
+  <div class="noise"></div>
 
-  <header class="header">
+  <header class="site-header">
     <div class="container nav">
-      <a href="#home" class="logo">
-        <img src="logo.png" alt="Protect Bot Logo" class="logo-img" />
-        <div class="logo-text">
-          <span class="logo-top">Protect</span>
-          <span class="logo-bottom">Bot</span>
+      <a href="#top" class="brand">
+        <div class="brand-mark">PB</div>
+        <div>
+          <span class="brand-kicker">Premium Security</span>
+          <strong>Protect Bot</strong>
         </div>
       </a>
 
-      <nav class="nav-links">
-        <a href="#about">À propos</a>
-        <a href="#bots">Bots</a>
+      <nav class="desktop-nav">
         <a href="#features">Fonctionnalités</a>
+        <a href="#commands">Commandes</a>
         <a href="#pricing">Tarifs</a>
+        <a href="#payments">Paiement</a>
         <a href="#faq">FAQ</a>
-        <a href="#support">Support</a>
       </nav>
 
-      <a href="#pricing" class="nav-button">Acheter</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">Menu</button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#features">Fonctionnalités</a>
+      <a href="#commands">Commandes</a>
+      <a href="#pricing">Tarifs</a>
+      <a href="#payments">Paiement</a>
+      <a href="#faq">FAQ</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
+  <main id="top">
+    <section class="hero section">
       <div class="container hero-grid">
-        <div class="hero-left reveal">
-          <p class="eyebrow">Discord Bots • Security • Premium</p>
-          <h1>
-            Des bots Discord premium pour protéger, automatiser et améliorer votre serveur.
-          </h1>
-          <p class="hero-text">
-            Protect Bot propose des bots Discord conçus pour la sécurité, la modération
-            et l’intelligence artificielle. Un style premium, une image professionnelle
-            et des outils pensés pour les serveurs qui veulent quelque chose de sérieux.
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Protect your Discord like a premium brand</span>
+          <h1>Un site qui respire la qualité.<br>Un bot qui respire la sécurité.</h1>
+          <p>
+            Protect Bot présente tes bots Discord avec une identité visuelle haut de gamme, une
+            vraie hiérarchie, des animations propres et un rendu sérieux pensé pour vendre.
           </p>
 
-          <div class="hero-badges">
-            <span>Sécurité avancée</span>
-            <span>IA intégrée</span>
-            <span>Design premium</span>
-            <span>Livraison rapide</span>
-          </div>
-
           <div class="hero-actions">
-            <a href="#bots" class="btn btn-white">Découvrir les bots</a>
-            <a href="#pricing" class="btn btn-outline">Voir les prix</a>
+            <a class="btn btn-primary" href="#pricing">Découvrir l’offre</a>
+            <a class="btn btn-secondary" href="#commands">Voir les commandes</a>
           </div>
 
           <div class="hero-stats">
-            <div class="stat-card">
-              <span>2</span>
-              <p>Bots principaux</p>
-            </div>
-            <div class="stat-card">
-              <span>24/7</span>
-              <p>Protection active</p>
-            </div>
-            <div class="stat-card">
-              <span>2.50€</span>
-              <p>Prix de départ</p>
-            </div>
+            <article>
+              <strong>2.50€</strong>
+              <span>à partir de</span>
+            </article>
+            <article>
+              <strong>24/7</strong>
+              <span>protection active</span>
+            </article>
+            <article>
+              <strong>Premium</strong>
+              <span>design vitrine</span>
+            </article>
           </div>
         </div>
 
-        <div class="hero-right reveal delay-1">
-          <div class="hero-panel">
-            <div class="panel-top">
-              <div class="panel-dots">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="hero-card reveal delay-1">
+          <div class="glass-card product-preview">
+            <div class="preview-top">
+              <div>
+                <span class="small-label">Console</span>
+                <h2>Protect Bot Control</h2>
               </div>
-              <p>Protect Bot Premium Panel</p>
-            </div>
-
-            <div class="hero-logo-box">
-              <img src="logo.png" alt="Protect Bot" class="hero-logo" />
-            </div>
-
-            <div class="panel-block">
-              <span class="panel-label">Protect Guard</span>
-              <h3>Sécurité & modération</h3>
-              <p>
-                Anti-raid, anti-spam, anti-link, logs, lockdown, whitelist et
-                protection avancée pour les serveurs Discord.
-              </p>
-            </div>
-
-            <div class="panel-block">
-              <span class="panel-label">Protect AI</span>
-              <h3>Intelligence artificielle</h3>
-              <p>
-                Réponses intelligentes, assistance serveur, aide aux membres et
-                interaction naturelle pour votre communauté.
-              </p>
-            </div>
-
-            <div class="mini-console">
-              <div class="console-line">
-                <span class="console-tag">PRICE</span>
-                <span>Starting at 2.50€</span>
+              <div class="window-dots">
+                <span></span><span></span><span></span>
               </div>
-              <div class="console-line">
-                <span class="console-tag">PAY</span>
-                <span>Litecoin • Card • PayPal</span>
+            </div>
+
+            <div class="preview-panels">
+              <div class="panel">
+                <span class="small-label">Modules actifs</span>
+                <ul>
+                  <li>Anti-Raid</li>
+                  <li>Anti-Nuke</li>
+                  <li>Logs</li>
+                  <li>Lockdown</li>
+                </ul>
               </div>
-              <div class="console-line">
-                <span class="console-tag">STATUS</span>
-                <span>Available now</span>
+              <div class="panel highlight">
+                <span class="small-label">Status</span>
+                <strong>Protection maximale</strong>
+                <p>Toutes les protections critiques sont activées et prêtes à l’emploi.</p>
+              </div>
+              <div class="panel">
+                <span class="small-label">Paiements</span>
+                <ul>
+                  <li>Litecoin</li>
+                  <li>Carte bancaire</li>
+                  <li>PayPal</li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-title reveal">
-          <p class="eyebrow">À propos</p>
-          <h2>Une image premium pour vendre vos bots Discord</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-card reveal">
-            <p>
-              Protect Bot développe des bots Discord pensés pour les serveurs
-              qui veulent une vraie sécurité, une modération plus simple et une
-              assistance moderne pour leurs membres.
-            </p>
-            <p>
-              Chaque bot est conçu pour offrir une expérience propre, rapide,
-              stable et professionnelle. L’objectif est de proposer une solution
-              premium, facile à utiliser et agréable à présenter à vos futurs clients.
-            </p>
-          </div>
-
-          <div class="about-side reveal delay-1">
-            <div class="side-box">
-              <span>Protection</span>
-              <strong>Anti-raid, anti-spam, anti-link</strong>
-            </div>
-            <div class="side-box">
-              <span>Gestion</span>
-              <strong>Logs, lockdown, whitelist, modération rapide</strong>
-            </div>
-            <div class="side-box">
-              <span>Assistance</span>
-              <strong>IA, réponses intelligentes, support communauté</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="bots">
-      <div class="container">
-        <div class="section-title reveal">
-          <p class="eyebrow">Nos bots</p>
-          <h2>Deux solutions premium pour les serveurs Discord</h2>
-        </div>
-
-        <div class="bots-grid">
-          <article class="bot-card reveal active-bot-card" data-bot="guard">
-            <div class="bot-head">
-              <span class="bot-tag">Sécurité & modération</span>
-              <h3>Protect Guard</h3>
-              <div class="bot-price">2.50€</div>
-            </div>
-
-            <p class="bot-desc">
-              Protect Guard protège les serveurs Discord contre les attaques, le
-              spam, les liens malveillants et les comportements abusifs.
-            </p>
-
-            <div class="feature-list">
-              <span>Anti-raid</span>
-              <span>Anti-spam</span>
-              <span>Anti-link</span>
-              <span>Lockdown</span>
-              <span>Logs</span>
-              <span>Whitelist</span>
-            </div>
-
-            <div class="card-actions">
-              <button class="btn btn-white bot-switch" data-bot="guard" type="button">
-                Voir les commandes
-              </button>
-              <a href="#pricing" class="btn btn-outline">Acheter</a>
-            </div>
-          </article>
-
-          <article class="bot-card reveal delay-1" data-bot="ai">
-            <div class="bot-head">
-              <span class="bot-tag">Intelligence artificielle</span>
-              <h3>Protect AI</h3>
-              <div class="bot-price">2.50€</div>
-            </div>
-
-            <p class="bot-desc">
-              Protect AI aide les membres avec des réponses intelligentes, une
-              assistance serveur et une interaction plus naturelle.
-            </p>
-
-            <div class="feature-list">
-              <span>IA</span>
-              <span>Aide serveur</span>
-              <span>Optimisation</span>
-              <span>Gaming</span>
-              <span>Réponses rapides</span>
-              <span>Assistance</span>
-            </div>
-
-            <div class="card-actions">
-              <button class="btn btn-white bot-switch" data-bot="ai" type="button">
-                Voir les commandes
-              </button>
-              <a href="#pricing" class="btn btn-outline">Acheter</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="commands">
-      <div class="container">
-        <div class="section-title reveal">
-          <p class="eyebrow">Commandes</p>
-          <h2>Détails du bot sélectionné</h2>
-        </div>
-
-        <div class="commands-panel reveal">
-          <div class="commands-top">
-            <div>
-              <p class="commands-label">Bot actif</p>
-              <h3 id="botTitle">Protect Guard</h3>
-            </div>
-
-            <div class="commands-tabs">
-              <button class="tab-btn active" data-bot="guard" type="button">Protect Guard</button>
-              <button class="tab-btn" data-bot="ai" type="button">Protect AI</button>
-            </div>
-          </div>
-
-          <p class="commands-description" id="botDescription">
-            Protect Guard est un bot de sécurité avancé qui protège les serveurs
-            Discord contre les raids, le spam, les liens malveillants et les
-            comportements abusifs. Il permet aussi aux administrateurs de gérer
-            rapidement la sécurité du serveur.
-          </p>
-
-          <div class="command-grid" id="commandGrid"></div>
         </div>
       </div>
     </section>
 
     <section class="section" id="features">
       <div class="container">
-        <div class="section-title reveal">
-          <p class="eyebrow">Fonctionnalités</p>
-          <h2>Pourquoi choisir Protect Bot</h2>
+        <div class="section-head reveal">
+          <span class="eyebrow">Fonctionnalités</span>
+          <h2>Une vitrine propre pour des fonctionnalités sérieuses.</h2>
+          <p>Chaque section a été pensée pour que le site fasse vrai produit premium, pas simple template générique.</p>
         </div>
 
-        <div class="features-grid">
-          <div class="info-card reveal">
-            <h3>Sécurité avancée</h3>
-            <p>
-              Protection active contre les raids, les abus, le spam et les
-              comportements malveillants.
-            </p>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="card-tag">01</span>
+            <h3>Anti-Raid intelligent</h3>
+            <p>Bloque les vagues d’actions abusives, protège les salons et garde ton serveur propre même sous pression.</p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <span class="card-tag">02</span>
+            <h3>Anti-Nuke avancé</h3>
+            <p>Surveille les suppressions massives, les modifications critiques et réduit les dégâts en quelques secondes.</p>
+          </article>
+          <article class="feature-card reveal delay-2">
+            <span class="card-tag">03</span>
+            <h3>Logs complets</h3>
+            <p>Messages, rôles, salons, sanctions et événements sensibles sont centralisés pour garder une vision claire.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="card-tag">04</span>
+            <h3>Lockdown rapide</h3>
+            <p>Verrouille un salon ou le serveur en un instant pour limiter les dégâts pendant une attaque ou un spam massif.</p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <span class="card-tag">05</span>
+            <h3>Backup utile</h3>
+            <p>Sauvegarde la structure du serveur pour repartir plus vite après un problème ou dupliquer une configuration.</p>
+          </article>
+          <article class="feature-card reveal delay-2">
+            <span class="card-tag">06</span>
+            <h3>Présentation premium</h3>
+            <p>Le site met en valeur tes bots avec un design crédible, moderne, sombre et beaucoup plus vendeur.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="commands">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Commandes</span>
+          <h2>Des commandes mises en avant comme un vrai produit.</h2>
+        </div>
+
+        <div class="command-layout">
+          <div class="command-sidebar reveal">
+            <button class="command-tab active" data-target="security">Sécurité</button>
+            <button class="command-tab" data-target="moderation">Modération</button>
+            <button class="command-tab" data-target="backup">Backup</button>
+            <button class="command-tab" data-target="access">Accès</button>
           </div>
 
-          <div class="info-card reveal delay-1">
-            <h3>Modération rapide</h3>
-            <p>
-              Outils efficaces pour verrouiller, surveiller et sécuriser le
-              serveur rapidement.
-            </p>
-          </div>
+          <div class="command-content reveal delay-1">
+            <div class="command-panel active" id="security">
+              <h3>Protection du serveur</h3>
+              <div class="command-list">
+                <article><strong>+antiraid on</strong><span>Active la protection anti-raid.</span></article>
+                <article><strong>+antinuke on</strong><span>Active la protection anti-nuke.</span></article>
+                <article><strong>+antilink on</strong><span>Bloque les liens non autorisés.</span></article>
+                <article><strong>+antispam on</strong><span>Réduit le spam en salon.</span></article>
+              </div>
+            </div>
 
-          <div class="info-card reveal delay-2">
-            <h3>Configuration simple</h3>
-            <p>
-              Une utilisation fluide avec des commandes claires et une prise en
-              main rapide.
-            </p>
-          </div>
+            <div class="command-panel" id="moderation">
+              <h3>Gestion rapide</h3>
+              <div class="command-list">
+                <article><strong>+lock</strong><span>Verrouille le salon actuel.</span></article>
+                <article><strong>+unlock</strong><span>Rouvre le salon verrouillé.</span></article>
+                <article><strong>+clear 10</strong><span>Supprime rapidement plusieurs messages.</span></article>
+                <article><strong>+help</strong><span>Affiche le panel des catégories du bot.</span></article>
+              </div>
+            </div>
 
-          <div class="info-card reveal delay-3">
-            <h3>Support sérieux</h3>
-            <p>
-              Une assistance disponible pour répondre aux questions et aider vos
-              clients.
-            </p>
+            <div class="command-panel" id="backup">
+              <h3>Sauvegarde serveur</h3>
+              <div class="command-list">
+                <article><strong>+backup create</strong><span>Crée une sauvegarde de la structure.</span></article>
+                <article><strong>+backup load</strong><span>Recharge une sauvegarde existante.</span></article>
+                <article><strong>+backup list</strong><span>Affiche les sauvegardes disponibles.</span></article>
+              </div>
+            </div>
+
+            <div class="command-panel" id="access">
+              <h3>Accès et contrôle</h3>
+              <div class="command-list">
+                <article><strong>+own @membre</strong><span>Donne un accès owner configuré.</span></article>
+                <article><strong>+wl add @membre</strong><span>Ajoute un utilisateur à la whitelist.</span></article>
+                <article><strong>+wl remove @membre</strong><span>Retire un utilisateur de la whitelist.</span></article>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -324,147 +221,95 @@
 
     <section class="section" id="pricing">
       <div class="container">
-        <div class="section-title reveal">
-          <p class="eyebrow">Tarifs</p>
-          <h2>Choisissez votre formule</h2>
+        <div class="section-head reveal">
+          <span class="eyebrow">Tarifs</span>
+          <h2>Simple, direct, propre.</h2>
         </div>
 
         <div class="pricing-grid">
-          <div class="pricing-card reveal">
-            <span class="pricing-badge">Bot individuel</span>
-            <h3>Protect Guard</h3>
-            <div class="price-line">
-              <span class="price">2.50€</span>
-              <span class="price-note">paiement unique</span>
-            </div>
-            <p class="pricing-text">
-              Bot de sécurité et de modération pour protéger un serveur Discord.
-            </p>
-            <div class="pricing-features">
-              <div class="pricing-item">Anti-raid</div>
-              <div class="pricing-item">Anti-spam</div>
-              <div class="pricing-item">Lockdown</div>
-              <div class="pricing-item">Logs</div>
-            </div>
-            <div class="card-actions">
-              <a href="#" class="btn btn-white">Acheter Guard</a>
-            </div>
-          </div>
+          <article class="price-card reveal">
+            <span class="plan">Essentiel</span>
+            <h3>2.50€</h3>
+            <p>Une offre de départ propre pour vendre rapidement Protect Bot.</p>
+            <ul>
+              <li>Accès au bot</li>
+              <li>Protections principales</li>
+              <li>Interface premium</li>
+            </ul>
+            <a href="#payments" class="btn btn-primary full">Choisir cette offre</a>
+          </article>
 
-          <div class="pricing-card featured reveal delay-1">
-            <span class="pricing-badge">Le plus vendu</span>
-            <h3>Pack complet</h3>
-            <div class="price-line">
-              <span class="price">4.99€</span>
-              <span class="price-note">paiement unique</span>
-            </div>
-            <p class="pricing-text">
-              Protect Guard + Protect AI pour proposer une solution plus complète.
-            </p>
-            <div class="pricing-features">
-              <div class="pricing-item">Protect Guard</div>
-              <div class="pricing-item">Protect AI</div>
-              <div class="pricing-item">Support</div>
-              <div class="pricing-item">Livraison rapide</div>
-            </div>
-            <div class="card-actions">
-              <a href="#" class="btn btn-white">Acheter le pack</a>
-            </div>
-          </div>
+          <article class="price-card featured reveal delay-1">
+            <span class="plan">Premium</span>
+            <h3>Sur mesure</h3>
+            <p>Pour une version plus complète avec branding, modules supplémentaires et mise en place personnalisée.</p>
+            <ul>
+              <li>Branding personnalisé</li>
+              <li>Configuration avancée</li>
+              <li>Rendu plus exclusif</li>
+            </ul>
+            <a href="#payments" class="btn btn-secondary full">Demander un pack</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <div class="pricing-card reveal delay-2">
-            <span class="pricing-badge">Bot individuel</span>
-            <h3>Protect AI</h3>
-            <div class="price-line">
-              <span class="price">2.50€</span>
-              <span class="price-note">paiement unique</span>
-            </div>
-            <p class="pricing-text">
-              Bot intelligent pour l’assistance, les réponses et l’interaction.
-            </p>
-            <div class="pricing-features">
-              <div class="pricing-item">Réponses IA</div>
-              <div class="pricing-item">Aide serveur</div>
-              <div class="pricing-item">Optimisation</div>
-              <div class="pricing-item">Interaction</div>
-            </div>
-            <div class="card-actions">
-              <a href="#" class="btn btn-white">Acheter AI</a>
-            </div>
-          </div>
+    <section class="section section-alt" id="payments">
+      <div class="container payments">
+        <div class="section-head reveal">
+          <span class="eyebrow">Modes de paiement</span>
+          <h2>Prévu pour vendre simplement.</h2>
         </div>
 
-        <div class="payment-box reveal">
-          <p class="payment-title">Modes de paiement acceptés</p>
-          <div class="payment-methods">
-            <span>Litecoin</span>
-            <span>Carte bancaire</span>
-            <span>PayPal</span>
-          </div>
+        <div class="payment-grid">
+          <article class="payment-card reveal">
+            <strong>Litecoin</strong>
+            <span>Crypto rapide</span>
+          </article>
+          <article class="payment-card reveal delay-1">
+            <strong>Carte bancaire</strong>
+            <span>Paiement classique</span>
+          </article>
+          <article class="payment-card reveal delay-2">
+            <strong>PayPal</strong>
+            <span>Solution populaire</span>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section" id="faq">
       <div class="container">
-        <div class="section-title reveal">
-          <p class="eyebrow">FAQ</p>
-          <h2>Questions fréquentes</h2>
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Les réponses visibles tout de suite.</h2>
         </div>
 
-        <div class="faq-grid">
-          <div class="faq-item reveal">
-            <h3>Comment acheter un bot ?</h3>
-            <p>Choisissez une formule, contactez le support ou utilisez votre lien d’achat.</p>
-          </div>
-          <div class="faq-item reveal delay-1">
-            <h3>Quels paiements acceptez-vous ?</h3>
-            <p>Litecoin, carte bancaire et PayPal.</p>
-          </div>
-          <div class="faq-item reveal delay-2">
-            <h3>Le support est-il disponible ?</h3>
-            <p>Oui, un support est prévu pour répondre aux questions liées aux bots.</p>
-          </div>
-          <div class="faq-item reveal delay-3">
-            <h3>Puis-je acheter les deux bots ?</h3>
-            <p>Oui, le pack complet permet d’obtenir Protect Guard et Protect AI.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="support">
-      <div class="container">
-        <div class="support-box reveal">
-          <p class="eyebrow">Support</p>
-          <h2>Besoin d’aide ou envie d’acheter un bot ?</h2>
-          <p class="support-text">
-            Rejoignez le support Protect Bot pour poser vos questions, obtenir
-            des informations sur les bots, demander une aide ou finaliser un achat.
-          </p>
-          <div class="support-actions">
-            <a href="#" class="btn btn-white">Rejoindre le support</a>
-            <a href="#" class="btn btn-outline">Contacter Protect Bot</a>
-          </div>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Le site est prêt à être mis sur GitHub Pages ?</summary>
+            <p>Oui. Les fichiers sont statiques, simples à héberger et prêts à être remplacés dans ton dépôt.</p>
+          </details>
+          <details class="faq-item reveal delay-1">
+            <summary>Je peux modifier les commandes ou les prix ?</summary>
+            <p>Oui. Tout le texte se change directement dans le fichier index.html.</p>
+          </details>
+          <details class="faq-item reveal delay-2">
+            <summary>Je peux ajouter mon logo ensuite ?</summary>
+            <p>Oui. Tu pourras remplacer le bloc PB par ton image ou intégrer ton logo à plusieurs endroits.</p>
+          </details>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-content">
+  <footer class="site-footer">
+    <div class="container footer-inner">
       <div>
         <strong>Protect Bot</strong>
-        <p class="footer-small">Discord bots premium de sécurité et d’intelligence artificielle.</p>
+        <p>Discord Security — premium website experience.</p>
       </div>
-      <div>
-        <strong>Paiements</strong>
-        <p class="footer-small">Litecoin • Carte bancaire • PayPal</p>
-      </div>
-      <div>
-        <strong>Support</strong>
-        <p class="footer-small">Serveur Discord • Contact direct</p>
-      </div>
+      <a href="#top" class="back-top">Retour en haut</a>
     </div>
   </footer>
 
